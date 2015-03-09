@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Images in HTML</title>
+        <link rel="shortcut icon" type="image/icon" href="images/html-icon.png" />
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <div style="text-align: center; font-size:40px">HTML and CSS Tutorials</div>
+        <div style="text-align: right"><img src="images/html-css.jpg"; style="width:90px; height:63px"></div>
+        <h2>Image demo</h2>
+        <h3>This is a simple image loaded through my images directory in public.</h3>
+        <div><img src="images/hagelin.jpg"></div>
+        <div>Default size: 640px by 360px</div>
+        <table class="images_table">
+            <tr>
+                <th colspan="2">Images can be scaled differently using the <code>width: 200px</code> and <code>height: 100px</code> attributes</th>
+            </tr>
+            <tr>
+                <td><img src="images/hagelin.jpg"; style="width: 250px; height: 200px"></td>
+                <td><img src="images/hagelin.jpg"; style="width: 200px; height: 100px"></td>
+            </tr>
+            <tr>
+                <td>250px by 200px</td>
+                <td>200px by 100px</td>
+            </tr>
+        </table>
+        <div>Images are created using <code>&lt;img src="url"&gt;</code>, or if they are in your public directory, <code>&lt;img src="images/img-name"&gt;</code></div>
+        <div>Images can also be linked to other sites by surrounding your <code>&lt;img&gt;</code> tags with <code>&lt;a&gt;</code> tags, which I used for the "Back to Main Menu" button in the bottom right.</div>
+        <p></p>
+        <h4>Something more advanced... images can link to multiple pages.</h4>
+        <div>The rectangle will take you to google.com, and the circle to cnn.com</div>
+        <img src="images/map.gif"; usemap="#mapdemo"; style="width: 400px; height:200px">
+        <map name="mapdemo">
+            <area shape="rect" coords="0, 0, 200, 200" href="http://google.com">
+            <area shape="circle" coords="300, 100, 100" href="http://cnn.com">
+        </map>
+        <div>This is done with one image split into areas with <code>&lt;map&gt;</code> tags containing <code>&lt;area&gt;</code> tags.</div>
+        <div><code>&lt;area&gt;</code> tags take in the shape of the area, coordinates for it, and a site to link to.</div>
+        <div><code>&lt;area shape="rect" coords="0, 0, 200, 200" href="http://google.com"&gt;</code></div>
+        <div style="height: 20px"> </div>
+        <div style="text-align: center">
+            <a href="/lists.html"><button class="button">List demo</button></a>
+            <a href="/tables.html"><button class="button">Table demo</button></a>
+            <a href="/fonts.html"><button class="button">Font demo</button></a>
+            <a href="/backgrounds.html"><button class="button">Background demo</button></a>
+            <a href="/texts.html"><button class="button">Text demo</button></a>
+            <a href="/index.html"><button class="button">Home</button></a>
+        </div>
+    </body>
+</html>

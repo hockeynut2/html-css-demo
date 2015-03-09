@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables in HTML</title>
+        <link rel="shortcut icon" type="image/icon" href="images/html-icon.png" />
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <div style="text-align: center; font-size:40px">HTML and CSS Tutorials</div>
+        <div style="text-align: right"><img src="images/html-css.jpg"; style="width:90px; height:63px"></div>
+        <h2>Table demo</h2>
+        <div>Tables are made using the <code>&lt;table&gt;</code> tags.</div>
+        <table style="border: 1px solid black; border-collapse: collapse">
+            <tr>
+                <th colspan="2" style="border: 1px solid black; border-collapse: collapse">This is a table header, made with <code>&lt;th&gt;</code> tags.</th>
+            </tr>
+            <tr>
+                <td height="25px" style="border: 1px solid black; border-collapse: collapse">With a table, you create rows with the <code>&lt;tr&gt;</code> tag, and cells with the <code>&lt;td&gt;</code> tag.</td>
+                <td style="border: 1px solid black; border-collapse: collapse">Each cell can contain an image, text, or both</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse">Unless the length and width are specified, cells will auto-fit the largest item.</td>
+                <td style="border: 1px solid black; border-collapse: collapse"><div style="text-align: center">Example of text with img:</div><div style="text-align: center"><img src="images/html-css.jpg"; style="width:90px; height:63px"></div></td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; text-align: right">Smaller items can be aligned differently within cells.</td>
+                <td style="border: 1px solid black; border-collapse: collapse">
+                    <div>This was done using <code>&lt;table&gt;</code> tags within the <code>&lt;td&gt;</code> tags creating the cell.
+                    <table align="center" id="minitable">
+                        <tr>
+                            <th colspan="2">Tiny header</th>
+                        </tr>
+                        <tr>
+                            <td>Tables</td>
+                            <td>can</td>
+                        </tr>
+                        <tr>
+                            <td>contain</td>
+                            <td>tables.</td>
+                        </tr>
+                    </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div style="height: 20px"> </div>
+        <div style="text-align: center">
+            <a href="/images.html"><button class="button">Image demo</button></a>
+            <a href="/lists.html"><button class="button">List demo</button></a>
+            <a href="/fonts.html"><button class="button">Font demo</button></a>
+            <a href="/backgrounds.html"><button class="button">Background demo</button></a>
+            <a href="/texts.html"><button class="button">Text demo</button></a>
+            <a href="/index.html"><button class="button">Home</button></a>
+        </div>
+    </body>
+</html>
